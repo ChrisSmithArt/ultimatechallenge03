@@ -31,16 +31,20 @@ puts "Total number of product with low stock quanity: #{number_of_low_stock}"
 #find the category name of the last product in the group of objects returned earlier for products that start with 'C' and cost more than $10
 product_category = product_10dollar_C.last.category.name
 
+#print category name to console
 puts product_category
+
 
 first_cateogory = Category.where(:name => product_category).first
 
-new_one = first_cateogory.products.build( name:  'Oat Milk',
+puts first_cateogory.inspect
+
+new_product = first_cateogory.products.build( name:  'Oat Milk',
                                         description: 'Milk made from Oats.',
                                         price:  '4.75',
                                         stock_quantity: '100')
 
-new_one.save
+new_product.save
 
 
 
