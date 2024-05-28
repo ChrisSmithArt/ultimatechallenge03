@@ -5,9 +5,11 @@
 
 require_relative 'ar.rb'
 
-
+# Retrieve ALL the categories
 display_categories = Category.all
 
+# Loop throug all the categories, print out the category name, and then loop through each product for an individual category
+# And then print out each product's name and price before moving onto the next category.
 display_categories.each {|c| 
     puts "~~~ #{c.name} Products ~~~"
     display_product = c.products.all
@@ -15,5 +17,3 @@ display_categories.each {|c|
         puts "      #{p.name} is $#{p.price}."
     }
 }
-
-# puts Category.last.products.first.inspect

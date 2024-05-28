@@ -6,34 +6,43 @@
 
 require_relative 'ar.rb'
 
+# Create a new product object then set the values
 scrab_cakes = Product.new
 scrab_cakes.name = "Scrab Cakes"
 scrab_cakes.description = "Processed from native Scrab meat, both delicious and nutritious."
 scrab_cakes.price = "12.50"
 scrab_cakes.stock_quantity = "5"
 
+# Save the new product object to the database
 scrab_cakes.save
+# Print out the content of the new project object
 puts scrab_cakes.inspect
 
+# Create a second new product object as a hash
 paramite_pies = Product.create(
-    name: "Scrab Cakes",
+    name: "Paramite Pies",
     description: "Processed from native Paramite meat, homestyle and 100% natural.",
     price: "17.75",
     stock_quantity: "4"
     )
 
+# Save the new second product object to the database
 paramite_pies.save
+
+# Print out the content of the second new product object
 puts paramite_pies.inspect
 
+# Create a third new product object and set a value, but not all the valyes
 meech_munchies = Product.new(name: "Meech Munchies")
 
+# Save the third new product object to the database, while expecting errors, print out if it's a success.
 if (meech_munchies.save)
     puts "Meech Munchies were saved to the database products table."
     puts meech_munchies.inspect
   else
     puts "There was an error saving Meech Munchies to the database."
     
-    # We can loop through all the validation errors.
+    # Loop through all of the errors related to missing valid fields for the third new product
     meech_munchies.errors.messages.each do |column, errors|
       errors.each do |error|
         puts "The #{column} property #{error}."

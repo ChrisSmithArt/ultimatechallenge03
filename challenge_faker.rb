@@ -7,7 +7,6 @@ require_relative 'ar.rb'
 
 #make a loop to create 10 categories
 #nest a loop inside that first loop to create 10 products for each category
-
 10.times { 
     new_category = Category.new(name: Faker::Food.ingredient)
     new_category.save
