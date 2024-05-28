@@ -1,3 +1,9 @@
+# Student name: Chris Smith
+# Student ID: 0406238
+# Course: WEBD-3011 (255589) Agile Full Stack Web Development
+# Instructor: Diogo Iwasaki
+# Date: May 28, 2024
+
 # In the challenge_delete.rb file:
 # Find one of the products you created in challenge_create.rb and delete it from the database.
 

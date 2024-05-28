@@ -1,3 +1,9 @@
+# Student name: Chris Smith
+# Student ID: 0406238
+# Course: WEBD-3011 (255589) Agile Full Stack Web Development
+# Instructor: Diogo Iwasaki
+# Date: May 28, 2024
+
 # In the challenge_faker_read.rb file:
 # Find all the categories in the database (including those that you added using Faker). 
 # Display all category names and their associated products (name and price) in a nicely formatted list.

@@ -21,6 +21,7 @@ class Product < ActiveRecord::Base
 
   belongs_to :category
 
+  #Validation for uniquness of names, and minimum length, additionally requiring name, description, price, and stock_quantity.
   validates :name, uniqueness: true
   validates :name, length: { minimum: 3, too_short: "%{count} is the mininum number of characters required for a Product's name." }
   validates :name, :description, :price, :stock_quantity, presence: true

@@ -1,3 +1,9 @@
+# Student name: Chris Smith
+# Student ID: 0406238
+# Course: WEBD-3011 (255589) Agile Full Stack Web Development
+# Instructor: Diogo Iwasaki
+# Date: May 28, 2024
+
 # In the challenge_update.rb file:
 # Find all products with a stock quantity greater than 40.
 # Add one to the stock quantity of each of these products and then save these changes to the database.

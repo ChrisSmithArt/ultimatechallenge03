@@ -1,3 +1,9 @@
+# Student name: Chris Smith
+# Student ID: 0406238
+# Course: WEBD-3011 (255589) Agile Full Stack Web Development
+# Instructor: Diogo Iwasaki
+# Date: May 28, 2024
+
 #Products are associated with the Category table, through referencing the category_id (foreign key)
 
 require_relative 'ar.rb'

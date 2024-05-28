@@ -1,3 +1,9 @@
+# Student name: Chris Smith
+# Student ID: 0406238
+# Course: WEBD-3011 (255589) Agile Full Stack Web Development
+# Instructor: Diogo Iwasaki
+# Date: May 28, 2024
+
 # In the challenge_create.rb file:
 # Create three new products using the three different ways to create new AR objects.
 # Ensure that all three new products are persisted to the database, without validations errors.
